@@ -1,0 +1,46 @@
+:root{font-family:Inter,system-ui,Arial,sans-serif;background:#f5f6f8;color:#1e293b}
+*{box-sizing:border-box}
+body{margin:0}
+header{height:64px;background:#fff;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;justify-content:space-between;padding:0 18px;position:sticky;top:0;z-index:5}
+header b{display:block;font-size:18px}
+header small{color:#64748b}
+main{max-width:900px;margin:auto;padding:16px 16px 90px}
+.card,.item{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:16px;margin-bottom:12px;box-shadow:0 2px 8px #0f172a0a}
+.login{max-width:390px;margin:50px auto}
+.login input,.login button{width:100%;margin-top:10px}
+h1,h2,h3{margin:0 0 12px}
+.muted,small{color:#64748b}
+.monthbar{display:flex;justify-content:center;align-items:center;gap:14px;margin-bottom:18px}
+.monthbar button{background:#fff;color:#111827;border:1px solid #ddd}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:14px}
+.stat{background:#fff;border:1px solid #e5e7eb;border-radius:15px;padding:14px}
+.stat span{font-size:13px;color:#64748b;display:block}
+.stat b{font-size:21px;margin-top:4px;display:block}
+.quick{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.titleRow{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.page{display:none}
+.page.active{display:block}
+button{border:0;border-radius:11px;padding:10px 14px;background:#2563eb;color:white;font-weight:650;cursor:pointer}
+button.ghost{background:#eef2ff;color:#334155}
+input,select{width:100%;border:1px solid #d6dae1;border-radius:11px;padding:11px;background:white;font-size:16px;margin:5px 0 10px}
+.item .row{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.amount{font-size:18px;font-weight:750}
+.due{color:#b91c1c}
+.paid{color:#15803d}
+.miniActions{display:flex;gap:6px;margin-top:10px}
+.miniActions button{padding:7px 9px;font-size:12px}
+.danger{background:#fee2e2!important;color:#b91c1c!important}
+.milkEntry{display:grid;grid-template-columns:1fr 95px;gap:10px;align-items:center;border-bottom:1px solid #eee;padding:6px 0}
+.milkEntry input{margin:0}
+nav{position:fixed;bottom:0;left:0;right:0;height:68px;background:#fff;border-top:1px solid #ddd;display:flex;justify-content:center;z-index:10}
+nav button{width:min(20%,180px);background:white;color:#64748b;border-radius:0;padding:7px 2px;font-size:19px}
+nav span{font-size:11px;display:block;margin-top:2px}
+nav button.active{color:#2563eb}
+dialog{width:min(92vw,480px);border:0;border-radius:18px;padding:0;box-shadow:0 20px 60px #0004}
+dialog::backdrop{background:#0007}
+dialog form{padding:20px}
+.actions{display:flex;justify-content:flex-end;gap:8px;margin-top:10px}
+@media(min-width:700px){.stats{grid-template-columns:repeat(3,1fr)}
+.quick{grid-template-columns:repeat(4,1fr)}
+}
+.milkHead,.milkEntry{display:grid;grid-template-columns:1fr 82px 82px;gap:8px;align-items:center}.milkHead{font-size:12px;color:#64748b;padding:4px 0}.milkEntry input{margin:0;padding:9px}.calendarGrid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}.calLabel{text-align:center;font-size:11px;color:#64748b}.calDay{min-height:66px;border:1px solid #e5e7eb;border-radius:9px;padding:5px;font-size:11px;background:#f8fafc}.calDay b{display:block;font-size:12px}.calDay.empty{visibility:hidden}.calDay.hasMilk{background:#eff6ff;border-color:#bfdbfe}.calDay .total{color:#2563eb;font-weight:700;margin-top:4px}.balance{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.pill{padding:7px 10px;border-radius:999px;background:#eef2ff;font-size:12px;font-weight:650}.pill.red{background:#fee2e2;color:#991b1b}.pill.green{background:#dcfce7;color:#166534}nav{justify-content:flex-start;overflow-x:auto}nav button{min-width:74px;flex:1;width:auto;font-size:18px}
